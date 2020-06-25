@@ -2,6 +2,8 @@
 
 ## Introduction
 
+Caution: This app is for sample purposes only and to easily test concepts. A private key should never be uploaded and there are far better options for a production set up.
+
 This app uses Nginx and directs all traffic to a Flask app.
 
 ### Getting started
@@ -51,4 +53,4 @@ Connection: keep-alive
 
 This app needs CI:
 
-- 
+-
