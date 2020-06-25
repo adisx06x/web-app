@@ -16,7 +16,7 @@ To test app, go to your browser: `https://localhost`
 
 You can also use curl: `curl -i -k -L http://localhost` using the same options to see a full output and redirection.
 
-```
+```shell
 HTTP/1.1 301 Moved Permanently
 Server: nginx/1.19.0
 Date: Thu, 25 Jun 2020 01:17:10 GMT
@@ -35,7 +35,7 @@ Connection: keep-alive
 
 You can also use `curl -H "User-Agent: h4ck3r" -i -k -L https://localhost` to test user agent defined as h4ck3r.
 
-```
+```shell
 HTTP/1.1 403 FORBIDDEN
 Server: nginx/1.19.0
 Date: Thu, 25 Jun 2020 01:34:39 GMT
@@ -53,4 +53,7 @@ Connection: keep-alive
 
 This app needs CI:
 
--
+- Lint
+- Unit Testing
+- Build Stage
+- Deploy Stage
