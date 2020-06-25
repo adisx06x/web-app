@@ -1,5 +1,5 @@
 from flask import Flask, request, abort
-from datetime import date, datetime
+from datetime import datetime
 import pytz
 
 
@@ -7,14 +7,15 @@ app = Flask(__name__)
 
 
 def current_date():
-    today = date.today()
-    return today
+    time_zone_NY = pytz.timezone("America/New_York")
+    time_NY = datetime.now(time_zone_NY)
+    return time_NY.strftime("%m:%d:%Y")
 
 
 def current_time():
     time_zone_NY = pytz.timezone("America/New_York")
-    datetime_NY = datetime.now(time_zone_NY)
-    return datetime_NY.strftime("%H:%M:%S")
+    time_NY = datetime.now(time_zone_NY)
+    return time_NY.strftime("%H:%M:%S")
 
 
 @app.route('/')
