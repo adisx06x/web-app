@@ -1,6 +1,6 @@
 # Containerized Web Application
 
-## Introdcution
+## Introduction
 
 This app uses Nginx and directs all traffic to a Flask app.
 
