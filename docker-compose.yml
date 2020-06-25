@@ -8,9 +8,6 @@ services:
             - ./blueapron.key:/etc/demo/ssl/blueapron.key
         command:
             - app.py
-
-        environment: 
-            FLASK_ENV: development
         restart: on-failure
     nginx:
         image: nginx
